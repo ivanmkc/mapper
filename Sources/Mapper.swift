@@ -11,6 +11,12 @@ public struct Mapper {
     public init(JSON: NSDictionary) {
         self.JSON = JSON
     }
+    
+    public var allKeys : [Any] {
+        get {
+            return JSON.allKeys
+        }
+    }
 
     // MARK: - T: RawRepresentable
 
